@@ -1,8 +1,6 @@
 
 
-
-
-// Export an asynchronous function fetchData to fetch data from a URL
+// Fetch data from a URL
 export async function fetchData(url) {
     try {
         const response = await fetch(url);
@@ -12,6 +10,6 @@ export async function fetchData(url) {
         return await response.json();
     } catch (error) {
         console.error('Fetch error:', error);
-        throw error; // Re-throw the error for the caller to handle
+        throw error;
     }
 }
