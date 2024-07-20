@@ -1,6 +1,5 @@
 
 
-
 // Display data on the UI
 export function displayData(data) {
     clearDataContainers();
@@ -22,8 +21,7 @@ export function displayData(data) {
 
         document.body.appendChild(container);
     } catch (error) {
-        displayError('Error displaying data.');
-        console.error('Error displaying data:', error);
+        handleDisplayError(error);
     }
 }
 
